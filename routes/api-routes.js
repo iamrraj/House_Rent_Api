@@ -13,10 +13,10 @@ router.get('/', function (req, res) {
 // Import contact controller
 var contactController = require('../controller/controller');
 // Contact routes
-router.route('/contacts')
+router.route('/api/realestate/')
     .get(contactController.index)
     .post(contactController.new);
-router.route('/contacts/:contact_id')
+router.route('/api/realestate/:contact_id')
     .get(contactController.view)
     .patch(contactController.update)
     .put(contactController.update)
